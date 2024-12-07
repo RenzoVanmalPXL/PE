@@ -20,6 +20,11 @@ Hint:
     box-sizing: border-box;
 }
 
+body {
+    width: 70%;
+    margin-inline: auto;
+}
+
 header {
     text-transform: uppercase;
     border-bottom: 2px solid orange;
@@ -41,11 +46,13 @@ header h2 {
     padding-top: 10px;
 }
 
-main article1{
+main .article1{
     width: 60%;
     float:left;
+    margin: 25px;
 }
-main article1 img {
+
+main .article1 img {
     position: relative;
     flex: 0 0 60%;
     width: 225px;
@@ -53,19 +60,18 @@ main article1 img {
     float: left;
 }
 
-article2 article3 {
+.article2 .article3 {
     position: relative;
     float: left;
     width: 20%;
 }
-article4 article5 article6 {
+.article4 .article5 .article6 {
     position: relative;
     float: left;
     width: 30%;
-
 }
 
-article2 article3 article4 article5 article6 p {
+.article2 .article3 .article4 .article5 .article6 p {
     line-height: 1em;
     height: 3em;
     overflow: hidden;
@@ -90,6 +96,7 @@ nav {
 nav span{
     display:none;
 }
+
 .titel_kader {
     display: flex;
     align-items: center;
@@ -170,4 +177,12 @@ footer {
     text-align: center;
     padding: 10px 0;
     font-size: 1em;
+}
+
+.container {
+    display: flex;
+}
+
+.container > div {
+    width: 30%;
 }
